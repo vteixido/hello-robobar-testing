@@ -11,6 +11,7 @@ import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class CartSuiteTest {
@@ -40,6 +41,8 @@ public class CartSuiteTest {
 
     @Test
     public void colaTest() {
+        cartPage.addColaButton.click();
+        assertEquals(cartPage.totalField.getText(), "€1.25");
     }
 
 }
