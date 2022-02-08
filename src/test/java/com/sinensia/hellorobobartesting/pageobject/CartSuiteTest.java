@@ -41,8 +41,14 @@ public class CartSuiteTest {
 
     @Test
     public void colaTest() {
+        // Add o cola
         cartPage.addColaButton.click();
+        // Total must be €1.25
         assertEquals(cartPage.totalField.getText(), "€1.25");
+        // Add o cola
+        cartPage.addColaButton.click();
+        // Total must be €2.50
+        assertEquals(cartPage.totalField.getText(), "€2.50");
     }
 
 }

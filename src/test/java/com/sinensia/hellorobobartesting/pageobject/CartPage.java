@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 // http://localhost:3000/#!/
 public class CartPage {
 
+    private final WebDriver driver;
+
     @FindBy(css = ".ng-scope:nth-child(1) > td .input-group-append > .btn")
     public WebElement addColaButton;
 
@@ -27,6 +29,13 @@ public class CartPage {
     public WebElement btnButton;
 
     public CartPage(WebDriver driver) {
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+    public CheckoutPage checkout() {
+        checkoutButton.click();
+        return new CheckoutPage(driver);
+    }
+
 }
