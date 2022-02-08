@@ -1,0 +1,524 @@
+{
+  "id": "2e1a0fd1-5a38-4180-a052-98f620a811d6",
+  "version": "2.0",
+  "name": "RobobarTest",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "f591525e-98f4-4fcf-866d-cdabe4915488",
+    "name": "ColaTest",
+    "commands": [{
+      "id": "6e3f1c70-1431-4e53-85c5-de268f41eaae",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53c89c55-a5d0-4dec-ab67-e03b234ec934",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(1) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd3934e-c8ed-440d-83da-d2e70e2113fc",
+      "comment": "1x RobaCola = €1.25",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€1.25"
+    }, {
+      "id": "93ca5e6b-6e17-4811-843c-dd06e5eb1848",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(1) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8127e6ad-6884-4409-9c04-7ef4da79109d",
+      "comment": "2x RobaCola = €2.50",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€2.50"
+    }]
+  }, {
+    "id": "9936f94d-1d64-4817-9985-bd4bb41429aa",
+    "name": "BeerTest",
+    "commands": [{
+      "id": "ac17e5f0-f7fb-4c2c-9282-aed7f30732e4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd42a44b-9d09-4aad-a9b0-5360681729ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20ce2b39-5e3b-43d7-9136-be8b512f8c61",
+      "comment": "1x RoboBeer = €2.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€2.00"
+    }, {
+      "id": "913180d1-a2be-4400-9386-8d3561e184fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ad74dc9-27ca-4198-9887-60d9cf44558f",
+      "comment": "2x RoboBeer = €4.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€4.00"
+    }]
+  }, {
+    "id": "22bbea61-7f35-469c-b540-cfedead8819b",
+    "name": "WineTest",
+    "commands": [{
+      "id": "82e4d5e9-a137-42f1-a11d-159fb9214a93",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bb32194-8e25-4282-ae7f-546555eb9806",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a04a63f2-7825-4bdd-b5f0-7a166d39a984",
+      "comment": "1x RobWine = €3.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€3.00"
+    }, {
+      "id": "e7095fd7-f215-43e2-a848-1363bd80e5cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9aab3d8-6a45-4a76-b419-71952124afc5",
+      "comment": "2x RobWine = €6.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€6.00"
+    }]
+  }, {
+    "id": "653c63a9-91ff-4c86-9f6e-bc9d2bec396b",
+    "name": "UnderageBeer",
+    "commands": [{
+      "id": "f42a083b-08ae-4944-8dbe-93c5bc4d3149",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06932819-53fe-4ae9-b18b-76ec22423ed8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be2fbc4d-ff8a-47d9-9cce-e0280974308c",
+      "comment": "1x RoboBeer = €2.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€2.00"
+    }, {
+      "id": "c7e501a1-0eb4-43a9-8f09-c04b9da05fa1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "191b42a6-249c-4af6-bddd-dfdfb48fd06f",
+      "comment": "2x RoboBeer = €4.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€4.00"
+    }, {
+      "id": "16d9f4c5-7176-4765-aef4-ca85e9546b56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ee03108-0073-4e6c-818b-e9549262b41d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70596da5-39ce-4917-96c3-c288415d3d0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ageInput",
+      "targets": [
+        ["id=ageInput", "id"],
+        ["css=#ageInput", "css:finder"],
+        ["xpath=//input[@id='ageInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dfcff6e-f1b3-4b2a-8e52-b7225904767c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ageInput",
+      "targets": [
+        ["id=ageInput", "id"],
+        ["css=#ageInput", "css:finder"],
+        ["xpath=//input[@id='ageInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "17"
+    }, {
+      "id": "67917ba9-1cfc-4c78-8c3e-63b47b1b3f07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "626fcc4f-b6d0-48e8-91a1-436a81786b36",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-danger",
+      "targets": [
+        ["css=.alert-danger", "css:finder"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "07d01dc4-f3aa-4230-a4ad-119dc1a5bd17",
+    "name": "UnderageCola",
+    "commands": [{
+      "id": "54023ade-34b6-4686-aaa9-03e8e2e6690a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f74b0e-b541-4300-bc6f-3daa29aaabd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(1) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6904144-b22a-4cf6-9338-b0d3e655f7df",
+      "comment": "1x RobaCola = €1.25",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€1.25"
+    }, {
+      "id": "acc6cacc-32f8-4d46-b945-a99a81e9d51b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(1) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(1) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8145f29e-b163-44a5-bd72-bb1ac5c275d4",
+      "comment": "2x RobaCola = €2.50",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€2.50"
+    }, {
+      "id": "d670498e-1bbe-4ca6-b69d-5566e6c59154",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f781fed-17a7-4b50-88b1-c3db7c4ea54d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7210314-74e7-4577-a05a-4146f32a4efa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Coming right up! ~bzzzt~')]", "xpath:innerText"]
+      ],
+      "value": "Coming right up! ~bzzzt~"
+    }]
+  }, {
+    "id": "5872788f-0f31-4cd1-b71e-c16768e891ab",
+    "name": "AdultBeer",
+    "commands": [{
+      "id": "9ae947d9-9885-4002-b8b5-3c35edb3df03",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d95c5a69-e0d3-49f1-9427-19a00469d38f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "022c4694-d98e-4fc7-9085-5f552f6c5106",
+      "comment": "1x RoboBeer = €2.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€2.00"
+    }, {
+      "id": "48d61e46-70e3-42dd-b0ad-cee60acded6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(2) > td .input-group-append > .btn",
+      "targets": [
+        ["css=.ng-scope:nth-child(2) > td .input-group-append > .btn", "css:finder"],
+        ["xpath=//tr[2]/td[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c6f3d1-2eb8-47c8-85e9-0ba0cfafb153",
+      "comment": "2x RoboBeer = €4.00",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > .ng-binding",
+      "targets": [
+        ["css=tr:nth-child(4) > .ng-binding", "css:finder"],
+        ["xpath=//tr[4]/th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'€0.00')]", "xpath:innerText"]
+      ],
+      "value": "€4.00"
+    }, {
+      "id": "f69b032d-2045-4d20-a087-789e56f697df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "473ac3ea-5ed6-420d-be8a-9b4087216b75",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d422296d-34a3-4b11-9857-3602996e6b86",
+      "comment": "",
+      "command": "click",
+      "target": "id=ageInput",
+      "targets": [
+        ["id=ageInput", "id"],
+        ["css=#ageInput", "css:finder"],
+        ["xpath=//input[@id='ageInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91888410-1ea0-401d-8cd5-125b8e5f756b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ageInput",
+      "targets": [
+        ["id=ageInput", "id"],
+        ["css=#ageInput", "css:finder"],
+        ["xpath=//input[@id='ageInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "02e3cd23-a0a1-49c1-a7dc-67964d1d4fdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b114ea2a-0183-4ccd-8e49-e88d6cb72747",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Coming right up! ~bzzzt~')]", "xpath:innerText"]
+      ],
+      "value": "Coming right up! ~bzzzt~"
+    }]
+  }],
+  "suites": [{
+    "id": "016ea6a7-d8bd-44a4-bbf4-97fb57fbc8dd",
+    "name": "CartSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9936f94d-1d64-4817-9985-bd4bb41429aa", "f591525e-98f4-4fcf-866d-cdabe4915488", "22bbea61-7f35-469c-b540-cfedead8819b"]
+  }, {
+    "id": "cddf3b72-8d68-4dfb-823b-1215a296547b",
+    "name": "AgeSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07d01dc4-f3aa-4230-a4ad-119dc1a5bd17", "653c63a9-91ff-4c86-9f6e-bc9d2bec396b", "5872788f-0f31-4cd1-b71e-c16768e891ab"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
